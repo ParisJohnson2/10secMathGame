@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>10 Sec Maths Game</title>
+        <link rel="stylesheet" text="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="padding-bottom: 45px; color: #3caea3;">10 Sec Math Game</h1>
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="countDown" style="font-size: 54px; color: #f6d55c;">10</h2>
+                    <p style="color: #f6d55c;">Seconds Remaining</p>
+                    <h2 id="equation"></h2>
+                    <input id="answer" />
+                </div>
+                <div class="col-12">
+                    <div class="choiceBox">
+                        <input type="checkbox" value='+' id="plus" class="largerCheckbox">
+                        <label for="plus" style="color: #f6d55c;">+</label>
+                        <input type="checkbox" value="-" id="minus" class="largerCheckbox">
+                        <label for="minus" style="color: #f6d55c;">-</label>
+                        <input type="checkbox" value="*" id="times" class="largerCheckbox">
+                        <label for="times" style="color: #f6d55c;">*</label>
+                        <input type="checkbox" value="/" id="divide" class="largerCheckbox">
+                        <label for="divide" style="color: #f6d55c;">/</label>
+                    </div>
+                    <div class="rangeSlider">
+                        <input id="sliderRange" type="range" min="10" max="50" step="5" value="10">
+                        <p style="color: #3caea3;">Value: <span id="output"></span></p>
+                    </div>
+                </div>
+                <div class="col-12">
+                  <p style="color: #f6d55c;">Your Score: <span id="points">0</span></p>
+                  <p style="color: #3caea3;">HighScore: <span id="highscore">0</span></p>
+                  <button id="reset" style="background-color: #ed553b; border-color: #f6d55c; color: black;">Reset</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
