@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <title>10 Sec Maths Game</title>
+        <title>10 Sec Math Game</title>
         <link rel="stylesheet" text="text/css" href="style.css">
+        <script src="application.js"></script>
     </head>
     <body>
         <div class="container">
@@ -15,17 +16,17 @@
                 <div class="col-12">
                     <h2 id="countDown" style="font-size: 54px; color: #f6d55c;">10</h2>
                     <p style="color: #f6d55c;">Seconds Remaining</p>
-                    <h2 id="equation"></h2>
+                    <h2 id="equation" style="color: white;"></h2>
                     <input id="answer" />
                 </div>
                 <div class="col-12">
-                    <div class="choiceBox">
+                    <div class="choiceBox" style="font-size: 30px; margin-top: 10px; margin-bottom: 10px;">
                         <input type="checkbox" value='+' id="plus" class="largerCheckbox">
-                        <label for="plus" style="color: #f6d55c;">+</label>
+                        <label for="plus" style="color: #f6d55c; margin-right: 15px;">+</label>
                         <input type="checkbox" value="-" id="minus" class="largerCheckbox">
-                        <label for="minus" style="color: #f6d55c;">-</label>
+                        <label for="minus" style="color: #f6d55c; margin-right: 15px;">-</label>
                         <input type="checkbox" value="*" id="times" class="largerCheckbox">
-                        <label for="times" style="color: #f6d55c;">*</label>
+                        <label for="times" style="color: #f6d55c; margin-right: 15px;">*</label>
                         <input type="checkbox" value="/" id="divide" class="largerCheckbox">
                         <label for="divide" style="color: #f6d55c;">/</label>
                     </div>
